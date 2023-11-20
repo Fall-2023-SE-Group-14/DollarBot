@@ -7,8 +7,8 @@ from telebot import types
 
 # Initialize a dictionary to store registered users
 registered_users = {}
-# user_list=helper.read_json()
-def register_people(message, bot,user_list):
+user_list = helper.read_json()
+def register_people(message, bot):
     chat_id = message.chat.id
     if str(chat_id) not in user_list:
         user_list[str(chat_id)] = helper.createNewUserRecord(message)

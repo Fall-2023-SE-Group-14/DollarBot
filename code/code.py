@@ -112,11 +112,11 @@ def handle_menu_command(message):
         print('Setting reminder')
         reminder.run(message, bot)
     elif command == 'add_user':
-        add_user.register_people(message, bot, user_list)
+        add_user.register_people(message, bot)
     elif command == 'csv':
         csvfile.run(message, bot)
     elif command == 'delete_user':
-        delete_user.delete_user(message, bot, user_list)
+        delete_user.delete_user(message, bot)
     elif command == 'pdf':
         pdf.run(message, bot)
     elif command == 'send_mail':

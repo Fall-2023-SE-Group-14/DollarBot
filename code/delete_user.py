@@ -3,8 +3,8 @@ from telebot import types
 
 # Initialize a dictionary to store registered users
 registered_users = {}
-
-def delete_user(message, bot, user_list):
+user_list = helper.read_json()
+def delete_user(message, bot):
     chat_id = message.chat.id
     user_dict = user_list.get(str(chat_id), {})
     
