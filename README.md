@@ -76,7 +76,9 @@ With just a few quick commands, DollarSplitBot provides you with the ability to:
 Here are some pre-requisites that you'll need to take care of before starting installation:
 1. In the Telegram App/Desktop, search for "BotFather". Click on "Start" and enter the following command:
 
-> `/newbot`
+```
+/newbot
+```
 
 2. Follow the instructions on the screen:
     a. Choose a name for your bot.
@@ -89,29 +91,39 @@ Here are some pre-requisites that you'll need to take care of before starting in
 
 To install all the required libraries in a separate virtual environment, follow the commands below:
 1. Create a virtual environment:
-    >  `python -m venv venv`
+    ```
+    python -m venv venv
+    ```
 2. Activate the virtual environment:
 
     On Windows:
-    > `.\venv\Scripts\activate`
+    ```
+    .\venv\Scripts\activate
+    ```
 
     On Unix or MacOS:
-    > `source venv/bin/activate`
+    ```
+    source venv/bin/activate
+    ```
 
 Follow these instructions to set up this bot on your end in just a few minutes:
 
 1. Clone this repository to your local system.
 2. Start a terminal session in the directory where the project has been cloned. Run the following command to install the required dependencies:
-
-> `pip install -r requirements.txt`
+  ```
+  pip install -r requirements.txt
+  ```
 
 3. In the directory where this repo has been cloned, run the following command to execute a bash script to run the Telegram Bot:
-
->  `./run.sh`
+  ```
+  ./run.sh
+  ```
 
 (OR)
 
-> `bash run.sh`
+  ```
+  bash run.sh
+  ```
 
 4. Paste the API token you received from Telegram in pre-requisites step 4 when prompted.
 5. A successful run will generate a message on your terminal that says "TeleBot: Started polling."
@@ -142,11 +154,15 @@ By customizing these settings, you can send emails from any email account using 
 
 We use pytest to perform testing on all unit tests together. The command needs to be run from the home directory of the project. The command is:
 
-> `python run -m pytest test/`
+```
+python run -m pytest test/
+```
 
 (OR)
 
-> `python -m pytest test/`
+```
+python -m pytest test/
+```
 
 
 ### Code Coverage
@@ -155,9 +171,13 @@ Code coverage is part of the build. Every time new code is pushed to the reposit
 
 Locally, we use the coverage package in python for code coverage. The commands to check code coverage in python are as follows:
 
-> `coverage run -m pytest test/`
+```
+coverage run -m pytest test/
+```
 
-> `coverage report`
+```
+coverage report
+```
 
 
 ## Usage
