@@ -39,7 +39,7 @@ DollarBot is your easy-to-use Telegram Bot that simplifies recording daily expen
 <div style="display: flex; align-items: center;">
   <div>
 
-  ![Dollar Bot](https://drive.google.com/file/d/1kw8iNPu-rMBjRfhIcQd-CCXLtgiWQ-EA/preview)
+  <img src="./DollarBotDemoNewGIf.gif" alt="Dollar Bot" width="200" style="margin-right: 20px;"/>
 
   </div>
   <div>
