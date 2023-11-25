@@ -36,20 +36,27 @@ DollarBot is your easy-to-use Telegram Bot that simplifies recording daily expen
 
 > Where simplicity converges with financial harmony, right at your fingertips.
 
+<div style="display: flex; align-items: center;">
+  <img src="./docs/readmeDemoNew.gif" alt="Dollar Bot" width="200" style="margin-right: 20px;"/>
 
-## What's New?!
+  <div>
 
-With just a few quick commands, DollarSplitBot provides you with the ability to:
+  ## What's New?!
 
-1. **Welcome New Companions:** Easily add your friends to simplify expense sharing.
-2. **Record Your Transactions:** Effortlessly document and store your expenses.
-3. **Fair Divisions:** Unveil your spending history, clarifying who owes what to whom.
-4. **Financial Insights:** Monitor your daily and monthly expenditure totals.
-5. **Your Financial Narrative:** Retrieve your spending history whenever you need it.
-6. **A Fresh Start:** Clear all records when it's time to begin anew.
-7. **Customized Details:** Modify any spending details according to your preferences.
-8. **Document Trail:** Generate polished PDF expenditure reports for a comprehensive overview.
-9. **Friendly Reminders:** Send amiable email reminders to ensure financial settlements.
+  With just a few quick commands, DollarSplitBot provides you with the ability to:
+
+  1. **Welcome New Companions:** Easily add your friends to simplify expense sharing.
+  2. **Record Your Transactions:** Effortlessly document and store your expenses.
+  3. **Fair Divisions:** Unveil your spending history, clarifying who owes what to whom.
+  4. **Financial Insights:** Monitor your daily and monthly expenditure totals.
+  5. **Your Financial Narrative:** Retrieve your spending history whenever you need it.
+  6. **A Fresh Start:** Clear all records when it's time to begin anew.
+  7. **Customized Details:** Modify any spending details according to your preferences.
+  8. **Document Trail:** Generate polished PDF expenditure reports for a comprehensive overview.
+  9. **Friendly Reminders:** Send amiable email reminders to ensure financial settlements.
+  </div>
+</div>
+
 
 ## Table of Contents
 
