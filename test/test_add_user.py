@@ -5,44 +5,6 @@ from telebot import types
 from code import add_user
 from mock import ANY
 
-#
-# dateFormat = '%d-%b-%Y'
-# timeFormat = '%H:%M'
-# monthFormat = '%b-%Y'
-
-
-@patch('telebot.telebot')
-def test_run(mock_telebot, mocker):
-    mc = mock_telebot.return_value
-    mc.reply_to.return_value = True
-    message = create_message("hello from test run!")
-    add_user.run(message, mc)
-    #assert (mc.reply_to.called)
-
-@patch('telebot.telebot')
-def test_register_user_working(mock_telebot, mocker):
-    mc = mock_telebot.return_value
-    mc.send_message.return_value = []
-
-@patch('telebot.telebot')
-def test_register_user_not_working(mock_telebot, mocker):
-    mc = mock_telebot.return_value
-    mc.send_message.return_value = []
-
-@patch('telebot.telebot')
-def test_add_person_working(mock_telebot, mocker):
-    mc = mock_telebot.return_value
-    mc.send_message.return_value = []
-
-@patch('telebot.telebot')
-def test_add_person_not_working(mock_telebot, mocker):
-    mc = mock_telebot.return_value
-    mc.send_message.return_value = []
-
-@patch('telebot.telebot')
-def test_handle_registration_choice(mock_telebot, mocker):
-    mc = mock_telebot.return_value
-    mc.send_message.return_value = []
 
 def create_message(text):
     params = {'messagebody': text}
@@ -63,3 +25,39 @@ def test_read_json():
 
     except FileNotFoundError:
         print("---------NO RECORDS FOUND---------")
+
+
+@patch('telebot.telebot')
+def test_add_person_working(mock_telebot, mocker):
+    MOCK_USER_DATA = test_read_json()
+    mocker.patch.object(add_user, 'helper')
+    add_user.helper.read_json.return_value = MOCK_USER_DATA
+    add_user.add_person(MOCK_USER_DATA,mock_telebot)
+    assert (mc.send_message.called)
+
+
+@patch('telebot.telebot')
+def test_add_person_not_working(mock_telebot, mocker):
+    mocker.patch.object(add_user, 'helper')
+    add_user.helper.read_json.return_value = {}
+    add_user.add_person(create_message(""),mock_telebot)
+    if add_user.helper.write_json.called is False:
+        assert True
+
+
+@patch('telebot.telebot')
+def test_register_people_working(mock_telebot, mocker):
+    MOCK_USER_DATA = test_read_json()
+    mocker.patch.object(add_user, 'helper')
+    add_user.helper.read_json.return_value = MOCK_USER_DATA
+    add_user.register_people(MOCK_USER_DATA,mock_telebot)
+    assert (mc.send_message.called)
+
+
+@patch('telebot.telebot')
+def test_register_people_not_working(mock_telebot, mocker):
+    mocker.patch.object(add_user, 'helper')
+    add_user.helper.read_json.return_value = {}
+    add_user.register_people(create_message(""),mock_telebot)
+    if add_user.helper.write_json.called is False:
+        assert True
