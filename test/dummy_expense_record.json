@@ -1,56 +1,56 @@
 {
     "894127939": [
-        "28-Oct-2021 15:27,Food,2.3",
-        "28-Oct-2021 15:28,Food,15.75",
-        "28-Oct-2021 15:28,Food,9.99",
-        "28-Oct-2021 15:28,Groceries,20.0",
-        "28-Oct-2021 15:28,Utilities,10.0",
-        "28-Oct-2021 15:28,Transport,7.28",
-        "28-Oct-2021 15:28,Transport,25.99",
-        "28-Oct-2021 15:31,Utilities,6.0",
-        "28-Oct-2021 15:38,Food,10.0",
-        "28-Oct-2021 15:40,Groceries,80.0"
+        "28-Oct-2021 15:27,Food,2.3,Test1,Test2",
+        "28-Oct-2021 15:28,Food,15.75,Test1,Test1 & Test2",
+        "28-Oct-2021 15:28,Food,9.99,Test1,Test1",
+        "28-Oct-2021 15:28,Groceries,20.0,Test2,Test1 & Test2",
+        "28-Oct-2021 15:28,Utilities,10.0,Test2,Test1 & Test2",
+        "28-Oct-2021 15:28,Transport,7.28,Test1,Test1 & Test2",
+        "28-Oct-2021 15:28,Transport,25.99,Test2,Test1 & Test2",
+        "28-Oct-2021 15:31,Utilities,6.0,Test2,Test1 & Test2",
+        "28-Oct-2021 15:38,Food,10.0,Test1,Test1 & Test2",
+        "28-Oct-2021 15:40,Groceries,80.0,Test2,Test1 & Test2"
     ],
     "8941298739": [
-        "28-Oct-2021 15:27,Food,2.3",
-        "28-Oct-2021 15:28,Food,15.75",
-        "28-Oct-2021 15:28,Food,9.99",
-        "28-Oct-2021 15:28,Groceries,20.0",
-        "28-Oct-2021 15:28,Utilities,10.0",
-        "28-Oct-2021 15:28,Transport,7.28",
-        "28-Oct-2021 15:28,Transport,25.99",
-        "28-Oct-2021 15:31,Utilities,6.0",
-        "28-Oct-2021 15:38,Food,10.0",
-        "28-Oct-2021 15:40,Groceries,80.0"
+        "28-Oct-2021 15:27,Food,2.3,Test1,Test2",
+        "28-Oct-2021 15:28,Food,15.75,Test1,Test1 & Test2",
+        "28-Oct-2021 15:28,Food,9.99,Test1,Test1",
+        "28-Oct-2021 15:28,Groceries,20.0,Test2,Test1 & Test2",
+        "28-Oct-2021 15:28,Utilities,10.0,Test2,Test1 & Test2",
+        "28-Oct-2021 15:28,Transport,7.28,Test1,Test1 & Test2",
+        "28-Oct-2021 15:28,Transport,25.99,Test2,Test1 & Test2",
+        "28-Oct-2021 15:31,Utilities,6.0,Test2,Test1 & Test2",
+        "28-Oct-2021 15:38,Food,10.0,Test1,Test1 & Test2",
+        "28-Oct-2021 15:40,Groceries,80.0,Test2,Test1 & Test2"
     ],
     "1574038305": [
         
     ]
     ,
     "2614394724848": [
-        "28-Oct-2021 15:27,Food,2.3",
-        "28-Oct-2021 15:28,Food,15.75",
-        "28-Oct-2021 15:28,Food,9.99",
-        "28-Oct-2021 15:28,Groceries,20.0",
-        "28-Oct-2021 15:28,Utilities,10.0",
-        "28-Oct-2021 15:28,Transport,7.28",
-        "28-Oct-2021 15:28,Transport,25.99",
-        "28-Oct-2021 15:31,Utilities,6.0",
-        "28-Oct-2021 15:38,Food,10.0",
-        "28-Oct-2021 15:40,Groceries,80.0"  
+        "28-Oct-2021 15:27,Food,2.3,Test1,Test2",
+        "28-Oct-2021 15:28,Food,15.75,Test1,Test1 & Test2",
+        "28-Oct-2021 15:28,Food,9.99,Test1,Test1",
+        "28-Oct-2021 15:28,Groceries,20.0,Test2,Test1 & Test2",
+        "28-Oct-2021 15:28,Utilities,10.0,Test2,Test1 & Test2",
+        "28-Oct-2021 15:28,Transport,7.28,Test1,Test1 & Test2",
+        "28-Oct-2021 15:28,Transport,25.99,Test2,Test1 & Test2",
+        "28-Oct-2021 15:31,Utilities,6.0,Test2,Test1 & Test2",
+        "28-Oct-2021 15:38,Food,10.0,Test1,Test1 & Test2",
+        "28-Oct-2021 15:40,Groceries,80.0,Test2,Test1 & Test2"
     ],
     "1075979006": {
       "data": [
-        "28-Nov-2021 15:27,Food,2.3",
-        "28-Nov-2021 15:28,Food,15.75",
-        "28-Nov-2021 15:28,Food,9.99",
-        "28-Nov-2021 15:28,Groceries,20.0",
-        "28-Nov-2021 15:28,Utilities,10.0",
-        "28-Nov-2021 15:28,Transport,7.28",
-        "28-Nov-2021 15:28,Transport,25.99",
-        "28-Nov-2021 15:31,Utilities,6.0",
-        "28-Nov-2021 15:38,Food,10.0",
-        "28-Nov-2021 15:40,Groceries,80.0"
+        "28-Nov-2021 15:27,Food,2.3,Test1,Test2",
+        "28-Nov-2021 15:28,Food,15.75,Test1,Test1 & Test2",
+        "28-Nov-2021 15:28,Food,9.99,Test1,Test1",
+        "28-Nov-2021 15:28,Groceries,20.0,Test2,Test1 & Test2",
+        "28-Nov-2021 15:28,Utilities,10.0,Test2,Test1 & Test2",
+        "28-Nov-2021 15:28,Transport,7.28,Test1,Test1 & Test2",
+        "28-Nov-2021 15:28,Transport,25.99,Test2,Test1 & Test2",
+        "28-Nov-2021 15:31,Utilities,6.0,Test2,Test1 & Test2",
+        "28-Nov-2021 15:38,Food,10.0,Test1,Test1 & Test2",
+        "28-Nov-2021 15:40,Groceries,80.0,Test2,Test1 & Test2"
       ],
       "budget": {
         "overall": "1000.0",
@@ -59,16 +59,16 @@
     },
     "1075979007": {
       "data": [
-        "28-Nov-2021 15:27,Food,2.3",
-        "28-Nov-2021 15:28,Food,15.75",
-        "28-Nov-2021 15:28,Food,9.99",
-        "28-Nov-2021 15:28,Groceries,20.0",
-        "28-Nov-2021 15:28,Utilities,10.0",
-        "28-Nov-2021 15:28,Transport,7.28",
-        "28-Nov-2021 15:28,Transport,25.99",
-        "28-Nov-2021 15:31,Utilities,6.0",
-        "28-Nov-2021 15:38,Food,10.0",
-        "28-Nov-2021 15:40,Groceries,80.0"
+        "28-Nov-2021 15:27,Food,2.3,Test1,Test2",
+        "28-Nov-2021 15:28,Food,15.75,Test1,Test1 & Test2",
+        "28-Nov-2021 15:28,Food,9.99,Test1,Test1",
+        "28-Nov-2021 15:28,Groceries,20.0,Test2,Test1 & Test2",
+        "28-Nov-2021 15:28,Utilities,10.0,Test2,Test1 & Test2",
+        "28-Nov-2021 15:28,Transport,7.28,Test1,Test1 & Test2",
+        "28-Nov-2021 15:28,Transport,25.99,Test2,Test1 & Test2",
+        "28-Nov-2021 15:31,Utilities,6.0,Test2,Test1 & Test2",
+        "28-Nov-2021 15:38,Food,10.0,Test1,Test1 & Test2",
+        "28-Nov-2021 15:40,Groceries,80.0,Test2,Test1 & Test2"
     ],
       "budget": {
         "overall": null,
