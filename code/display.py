@@ -14,7 +14,7 @@ def run(message, bot):
     It takes 2 arguments for processing - message which is the message from the user, and bot
     which is the telegram bot object from the main code.py function.
     """
-    user_list=helper.read_json()
+    user_list = helper.read_json()
     chat_id = message.chat.id
     history = helper.getUserHistory(chat_id)
     if history is None:
@@ -25,41 +25,46 @@ def run(message, bot):
         markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
         markup.add("Display all expenses")
         markup.add("Display owings")
-        m = bot.send_message(chat_id, "Select what to display",reply_markup=markup)
-        bot.register_next_step_handler(m, display_choice, bot,user_list,chat_id)
+        m = bot.send_message(chat_id, "Select what to display", reply_markup=markup)
+        bot.register_next_step_handler(m, display_choice, bot, user_list, chat_id)
 
 
-def display_choice(message,bot,user_list,chat_id):
+def display_choice(message, bot, user_list, chat_id):
     chat_id = message.chat.id
     choice = message.text
-    if choice == 'Display all expenses':
-        display_expenses(message,bot)
-    elif choice =='Display owings':
-         display_owings(message,bot,user_list,chat_id)
+    if choice == "Display all expenses":
+        display_expenses(message, bot)
+    elif choice == "Display owings":
+        display_owings(message, bot, user_list, chat_id)
     else:
         m = bot.send_message(chat_id, "Select correct choice")
         bot.register_next_step_handler(m, run, bot)
 
-def display_owings(message,bot,user_list,chat_id):
-        markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
-        markup.row_width = len(user_list[str(chat_id)]["users"])
-        for c in user_list[str(chat_id)]["users"]:
-                markup.add(c)
-        m = bot.send_message(chat_id, "Select user who's owings you want to display",reply_markup=markup)
-        bot.register_next_step_handler(m, select_user, bot,user_list,chat_id)
 
-def select_user(message,bot,user_list,chat_id):
+def display_owings(message, bot, user_list, chat_id):
+    markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
+    markup.row_width = len(user_list[str(chat_id)]["users"])
+    for c in user_list[str(chat_id)]["users"]:
+        markup.add(c)
+    m = bot.send_message(
+        chat_id, "Select user who's owings you want to display", reply_markup=markup
+    )
+    bot.register_next_step_handler(m, select_user, bot, user_list, chat_id)
+
+
+def select_user(message, bot, user_list, chat_id):
     chat_id = message.chat.id
     user = message.text
-    owing_dictionary = helper.calculate_owing(user_list,chat_id)
-    final_string = ''
+    owing_dictionary = helper.calculate_owing(user_list, chat_id)
+    final_string = ""
     for owed in owing_dictionary[user]["owes"]:
-            final_string+=str("\n "+owed)
+        final_string += str("\n " + owed)
     for owing in owing_dictionary[user]["owing"]:
-            final_string+=str("\n "+owing)
-    if final_string == '':
-        final_string = str(user)+' owes or is owed nothing'
-    m = bot.send_message(chat_id, final_string)
+        final_string += str("\n " + owing)
+    if final_string == "":
+        final_string = str(user) + " owes or is owed nothing"
+    bot.send_message(chat_id, final_string)
+
 
 def display_expenses(message, bot):
     markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
@@ -73,6 +78,7 @@ def display_expenses(message, bot):
         reply_markup=markup,
     )
     bot.register_next_step_handler(msg, display_total, bot)
+
 
 def display_total(message, bot):
     """
@@ -116,16 +122,16 @@ def display_total(message, bot):
                 value for index, value in enumerate(history) if str(query) in value
             ]
         total_text = calculate_spendings(queryResult)
-        print("###########",total_text)
+        print("###########", total_text)
         monthly_budget = helper.getCategoryBudget(chat_id)
-        if monthly_budget == None:
+        if monthly_budget is None:
             message = "Looks like you have not entered any category-wise budget yet. Please enter your budget and then try to display the expenses."
             bot.send_message(chat_id, message)
 
             display_text = ""
             commands = helper.getCommands()
             for (
-            c
+                c
             ) in (
                 commands
             ):  # generate help text out of the commands dictionary defined at the top
@@ -160,7 +166,7 @@ def calculate_spendings(queryResult):
     It parses the query result and turns it into a form suitable for display on the UI by the user.
     """
     total_dict = {}
-    print("!!!!!!",queryResult)
+    print("!!!!!!", queryResult)
     for row in queryResult:
         # date,cat,money
         s = row.split(",")

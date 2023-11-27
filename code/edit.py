@@ -37,7 +37,6 @@ def select_category_to_be_updated(m, bot):
 
 
 def enter_updated_data(m, bot, selected_data):
-
     choice1 = "" if m.text is None else m.text
     markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
     markup.row_width = 2
@@ -45,7 +44,6 @@ def enter_updated_data(m, bot, selected_data):
         markup.add(cat)
 
     if "Date" in choice1:
-
         calendar, step = DetailedTelegramCalendar().build()
         bot.send_message(m.chat.id, f"Select {LSTEP[step]}", reply_markup=calendar)
 
@@ -61,7 +59,6 @@ def enter_updated_data(m, bot, selected_data):
                     reply_markup=key,
                 )
             elif result:
-
                 edit_date(bot, selected_data, result, c.message.chat.id)
 
                 bot.edit_message_text(
@@ -71,7 +68,6 @@ def enter_updated_data(m, bot, selected_data):
                 )
 
     if "Category" in choice1:
-
         new_cat = bot.reply_to(m, "Please select the new category", reply_markup=markup)
         bot.register_next_step_handler(new_cat, edit_cat, bot, selected_data)
 
