@@ -2,6 +2,7 @@ import helper
 import logging
 import matplotlib.pyplot as plt
 
+
 def run(message, bot):
     try:
         helper.read_json()
@@ -11,7 +12,19 @@ def run(message, bot):
         # Amount for each month
         amount = 0.0
         am = ""
-        Dict = {'Jan': 0.0, 'Feb': 0.0, 'Mar': 0.0, 'Apr': 0.0, 'May': 0.0, 'Jun': 0.0, 'Jul': 0.0, 'Sep': 0.0, 'Oct': 0.0, 'Nov': 0.0, 'Dec': 0.0}
+        Dict = {
+            "Jan": 0.0,
+            "Feb": 0.0,
+            "Mar": 0.0,
+            "Apr": 0.0,
+            "May": 0.0,
+            "Jun": 0.0,
+            "Jul": 0.0,
+            "Sep": 0.0,
+            "Oct": 0.0,
+            "Nov": 0.0,
+            "Dec": 0.0,
+        }
         if user_history is None:
             raise Exception("Sorry! No spending records found!")
         spend_total_str = "Here is your spending history : \nDATE, CATEGORY, AMOUNT\n----------------------\n"
@@ -30,9 +43,9 @@ def run(message, bot):
         # bot.send_message(chat_id, Dict[am])
         plt.clf()
         width = 1.0
-        plt.bar(Dict.keys(), Dict.values(), width, color='g')
-        plt.savefig('histo.png')
-        bot.send_photo(chat_id, photo=open('histo.png', 'rb'))
+        plt.bar(Dict.keys(), Dict.values(), width, color="g")
+        plt.savefig("histo.png")
+        bot.send_photo(chat_id, photo=open("histo.png", "rb"))
         ##bot.send_message(chat_id, amount)
     except Exception as e:
         logging.exception(str(e))

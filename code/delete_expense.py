@@ -13,7 +13,7 @@ def delete_expense(chat_id, expense_index):
             # Remove the expense at the specified index
             deleted_expense = user_info["data"].pop(expense_index)
             # Save the updated user data back to the database
-            with open('expense_record.json', 'w') as file:
+            with open("expense_record.json", "w") as file:
                 json.dump(user_data, file, indent=4)
             return f"Expense '{deleted_expense}' has been deleted."
     return "Expense deletion failed."
