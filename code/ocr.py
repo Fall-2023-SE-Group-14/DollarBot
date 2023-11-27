@@ -15,25 +15,24 @@ def run(message, bot):
     option.pop(chat_id, None)  # remove temp choice
     markup = types.ReplyKeyboardMarkup(one_time_keyboard=True)
     markup.row_width = 2
-    print("Categories:")
-    for c in helper.getSpendCategories():
-        print("\t", c)
-        markup.add(c)
-    msg = bot.reply_to(message, 'Select Category', reply_markup = markup)
-    bot.register_next_step_handler(msg, post_category_selection, bot)
+    msg = bot.reply_to(message, 'Please Upload Bill', reply_markup = markup)
+    bot.register_next_step_handler(msg, handle_invoice, bot)
 
-@bot.message_handler(content_types=['photo'])
-def handle_invoice(message):
+#@bot.message_handler(content_types=['photo'])
+def handle_invoice(message,bot):
 	# Download the photo
 	file_info = bot.get_file(message.photo[-1].file_id)
 	downloaded_file = bot.download_file(file_info.file_path)
+	chat_id = message.chat.id
 
 	# Save the photo locally
 	with open("invoice.jpg", 'wb') as new_file:
 		new_file.write(downloaded_file)
+		bot.send_message(chat_id, 'Bill Uploaded, scanning')
 
 	# Perform OCR on the saved image
 	text = ocr_invoice("invoice.jpg")
+	bot.send_message(chat_id, text)
 
 	# Check if OCR result contains a number
 	amount = extract_amount_from_text(text)
@@ -44,8 +43,8 @@ def handle_invoice(message):
 	else:
 		bot.reply_to(message, "Couldn't detect the amount from the invoice. Please try again.")
 
-@bot.message_handler(func=lambda message: message.text.lower() in ['yes', 'no'] and message.chat.id in user_states)
-def handle_confirmation(message):
+#@bot.message_handler(func=lambda message: message.text.lower() in ['yes', 'no'] and message.chat.id in user_states)
+def handle_confirmation(message,bot):
 	user_id = message.chat.id
 
 	if message.text.lower() == 'yes':
@@ -58,9 +57,13 @@ def handle_confirmation(message):
 	del user_states[user_id]
 
 def ocr_invoice(image_path):
+	pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract' 
 	# Use Tesseract OCR to extract text from the image
 	image = Image.open(image_path)
+
 	text = pytesseract.image_to_string(image)
+	
+
 
 	return text
 

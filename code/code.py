@@ -22,6 +22,7 @@ import reminder
 from datetime import datetime, time
 import threading
 import time
+import ocr
 
 configs = Properties()
 
@@ -57,8 +58,10 @@ menu_commands = [
     ("edit", "Edit/Change spending details"),
     ("budget", "Add/Update/View/Delete budget"),
     ("category", "Add/Delete/Show custom categories in telegram bot"),
-    ("set_reminder", "Create a reminder for your purchases or bills")
+    ("set_reminder", "Create a reminder for your purchases or bills"),
+    ("ocr", "Please upload your bill")
 ]
+
 
 bot.set_my_commands([
     types.BotCommand(command=command, description=description) for command, description in menu_commands
@@ -101,6 +104,9 @@ def handle_menu_command(message):
     elif command == 'set_reminder':
         print('Setting reminder')
         reminder.run(message, bot)
+    elif command == 'ocr':
+        print('Upload Bills')
+        ocr.run(message, bot)
 
 
 # Define a function to periodically check reminders
