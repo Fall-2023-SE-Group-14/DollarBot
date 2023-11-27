@@ -1,10 +1,13 @@
+"""
+This is the main file used to implement the VIEW BUDGET feature.
+"""
+
 import helper
 import logging
 
 
 def run(message, bot):
     try:
-        print("here")
         chat_id = message.chat.id
         if helper.isOverallBudgetAvailable(chat_id):
             display_overall_budget(message, bot)
@@ -21,13 +24,16 @@ def run(message, bot):
 def display_overall_budget(message, bot):
     chat_id = message.chat.id
     data = helper.getOverallBudget(chat_id)
-    bot.send_message(chat_id, "Overall Budget: $" + data)
+    if data is not None:
+        data = str(data)  # Convert the float to a string
+    bot.send_message(chat_id, "Overall Budget: $" + str(data))
 
 
 def display_category_budget(message, bot):
     chat_id = message.chat.id
     data = helper.getCategoryBudget(chat_id)
-    res = "Budget Summary\n"
-    for c, v in data.items():
-        res = res + c + ": $" + v + "\n"
-    bot.send_message(chat_id, res)
+    if data is not None:
+        formatted_data = "\n".join(
+            [f"{category}: ${budget}" for category, budget in data.items()]
+        )
+        bot.send_message(chat_id, "Category-Wise Budgets:\n" + formatted_data)

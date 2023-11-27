@@ -13,6 +13,11 @@ import delete
 import add
 import budget
 import category
+import add_user
+import csvfile
+import delete_user
+import pdf
+import send_mail
 import add_recurring
 import delete_expense
 from datetime import datetime
@@ -29,7 +34,7 @@ with open("user.properties", "rb") as read_prop:
     configs.load(read_prop)
 
 api_token = str(configs.get("api_token").data)
-
+user_list = helper.read_json()
 bot = telebot.TeleBot(api_token)
 
 telebot.logger.setLevel(logging.INFO)
@@ -65,6 +70,11 @@ menu_commands = [
     ("budget", "Add/Update/View/Delete budget"),
     ("category", "Add/Delete/Show custom categories in telegram bot"),
     ("set_reminder", "Create a reminder for your purchases or bills"),
+    ("add_user", "Add user to the dollar split wise"),
+    ("csv", "Download the expense in a CSV export file"),
+    ("send_mail", "Send the expense report in the mail"),
+    ("pdf", "Get the expense report in the form of PDF"),
+    ("delete_user", "Delete a user from the epense tracker"),
 ]
 
 bot.set_my_commands(
@@ -113,6 +123,16 @@ def handle_menu_command(message):
     elif command == "set_reminder":
         print("Setting reminder")
         reminder.run(message, bot)
+    elif command == "add_user":
+        add_user.register_people(message, bot)
+    elif command == "csv":
+        csvfile.run(message, bot)
+    elif command == "delete_user":
+        delete_user.delete_user(message, bot)
+    elif command == "pdf":
+        pdf.run(message, bot)
+    elif command == "send_mail":
+        send_mail.run(message, bot)
 
 
 # Define a function to periodically check reminders
