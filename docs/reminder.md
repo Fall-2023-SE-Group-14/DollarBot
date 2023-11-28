@@ -35,7 +35,7 @@ The code that implements this feature can be found [here](https://github.com/rra
 1. Start the MyDollarBot project.
 2. Open the Telegram chat with MyDollarBot.
 3. Select /set_reminder from menu to configure reminders for tracking daily or monthly expenses.
-4. Follow the prompts to select a category and enter the time for the reminder.
+4. Follow the prompts to select a category and enter time for the reminder.
 
 
 
