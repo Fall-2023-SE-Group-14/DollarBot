@@ -24,8 +24,8 @@ Below you can see an example:
 
 Below is the sample pdf for option 1:
 
-<img src="./pdfoptiona.png" width="350" height="250">
+<img src="./pdfoptiona.png" width="350" height="220">
 
 Below is the sample pdf for option 2:
 
-<img src="./pdfoptionb.png" width="350" height="300">
+<img src="./pdfoptionb.png" width="350" height="270">
