@@ -18,4 +18,4 @@ Once the project is running(please follow the instructions given in the main REA
 
 Below you can see an example:
 
-<img src="./deleteuser.png" width="350" height="800">
+<img src="./deleteuser.png" width="350" height="600">
