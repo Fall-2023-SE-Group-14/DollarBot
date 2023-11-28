@@ -100,7 +100,7 @@ def display_total(message, bot):
 
         history = helper.getUserHistory(chat_id)
         if history is None:
-            raise Exception("Oops! Looks like you do not have any spending records!")
+            raise Exception("Oops!! Looks like you do not have any spending records!")
 
         bot.send_message(chat_id, "Hold on! Calculating...")
         # show the bot "typing" (max. 5 secs)
@@ -122,7 +122,7 @@ def display_total(message, bot):
                 value for index, value in enumerate(history) if str(query) in value
             ]
         total_text = calculate_spendings(queryResult)
-        print("###########", total_text)
+        print("##############", total_text)
         monthly_budget = helper.getCategoryBudget(chat_id)
         if monthly_budget is None:
             message = "Looks like you have not entered any category-wise budget yet. Please enter your budget and then try to display the expenses."
