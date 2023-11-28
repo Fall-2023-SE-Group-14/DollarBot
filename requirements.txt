@@ -6,3 +6,6 @@ matplotlib
 coverage
 pytest-mock
 mock
+python-telegram-bot-calendar
+tabulate
+FPDF
