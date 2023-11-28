@@ -21,4 +21,4 @@ Once the project is running(please follow the instructions given in the main REA
 
 Below you can see an example:
 
-<img src="./adduser.png" width="350" height="900">
+<img src="./adduser.png" width="350" height="800">
