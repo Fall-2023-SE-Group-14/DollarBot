@@ -89,6 +89,7 @@ Here are some pre-requisites that you'll need to take care of before starting in
 
 ```
 /newbot
+
 ```
 
 2. Follow the instructions on the screen:
@@ -104,17 +105,20 @@ To install all the required libraries in a separate virtual environment, follow 
 1. Create a virtual environment:
     ```
     python -m venv venv
+
     ```
 2. Activate the virtual environment:
 
     On Windows:
     ```
     .\venv\Scripts\activate
+
     ```
 
     On Unix or MacOS:
     ```
     source venv/bin/activate
+    
     ```
 
 Follow these instructions to set up this bot on your end in just a few minutes:
