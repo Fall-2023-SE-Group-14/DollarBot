@@ -28,4 +28,4 @@ Below is the sample pdf for option 1:
 
 Below is the sample pdf for option 2:
 
-<img src="./pdfoptionb.png" width="350" height="270">
+<img src="./pdfoptionb.png" width="350" height="250">
