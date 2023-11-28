@@ -27,5 +27,5 @@ It is used to add this expense to the expense tracker. It asks the user to choos
 Once the project is running(please follow the instructions given in the main README.md for this), please type /ocr into the telegram bot.
 
 Below you can see an example in text format:
-<img src="./ocr1.png" width="350" height="800">
-<img src="./ocr2.png" width="350" height="800">
+<img src="./ocr1.png">
+<img src="./ocr2.png">
