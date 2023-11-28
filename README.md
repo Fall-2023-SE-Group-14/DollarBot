@@ -57,6 +57,7 @@ DollarBot is your easy-to-use Telegram Bot that simplifies recording daily expen
   7. **Customized Details:** Modify any spending details according to your preferences.
   8. **Document Trail:** Generate polished PDF expenditure reports for a comprehensive overview.
   9. **Friendly Reminders:** Send amiable email reminders to ensure financial settlements.
+  10. **Invoice OCR:** You can just scan your bill and get the data automatically added to the app.
   </div>
 </div>
 
