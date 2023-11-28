@@ -29,8 +29,8 @@ Once the project is running(please follow the instructions given in the main REA
 
 Below you can see an example:
 
-<img src="./sendmail.png" width="350" height="200">
+<img src="./sendmail.png" width="350" height="250">
 
 Below is the sample email generated in the above example:
 
-<img src="./sendmailss.jpeg" width="450" height="400">
+<img src="./sendmailss.jpeg" width="450" height="300">
