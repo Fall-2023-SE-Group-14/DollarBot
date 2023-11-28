@@ -21,4 +21,4 @@ Once the project is running(please follow the instructions given in the main REA
 
 Below you can see an example:
 
-<img src="./docs/adduser.png">
+<img src="./adduser.png">
