@@ -32,16 +32,19 @@ DollarBot is your easy-to-use Telegram Bot that simplifies recording daily expen
 - Better visualization: Added pie charts, bar graphs with and without budget lines for a better look at spending history
   Added a bar graph in the /history command to see spending across different categories
   View daily and monthly expenses for spending history
+- Easily scan your invoice and add the bill amount to the dollar bot.  
 
 
 > Where simplicity converges with financial harmony, right at your fingertips.
 
-<div style="display: flex; align-items: center;">
-  <div>
+💸 **Dollar Bot - OCR Invoice Feature** 💸
 
-  <img src="./DollarBotDemoNewGIf.gif" alt="Dollar Bot" width="200" style="margin-right: 20px;"/>
+Turn your receipts into digital treasures with our snazzy OCR Invoice feature! 📸💼 Simply upload an image, and watch the magic happen as Tesseract library transforms it into organized bill data. Making expenses fun, one byte at a time! 💳💻 Join the dollar revolution, because who said budgeting can't be amusing? 🚀🤖 #DollarBot #ExpenseMagic
 
-  </div>
+
+<img src="./OCR%20-%20DollarBot.gif" alt="Dollar Bot" width="500" style="margin-right: 20px;"/>
+
+<div style="display: flex; align-items: center;"> 
   <div>
 
   ## What's New?!
@@ -58,6 +61,11 @@ DollarBot is your easy-to-use Telegram Bot that simplifies recording daily expen
   8. **Document Trail:** Generate polished PDF expenditure reports for a comprehensive overview.
   9. **Friendly Reminders:** Send amiable email reminders to ensure financial settlements.
   10. **Invoice OCR:** You can just scan your bill and get the data automatically added to the app.
+  </div>
+  <div>
+
+  <img src="./DollarBotDemoNewGIf.gif" alt="Dollar Bot" width="200" style="margin-right: 20px;"/>
+
   </div>
 </div>
 
@@ -225,9 +233,6 @@ Here is a section where we will acknowledge the contributors to this project (so
 - Manasi Bhagwat
 - Zahra Shiraz
 
-## Support
-
-[Add here]
 
 ## FAQs
 
@@ -243,9 +248,6 @@ Here is a section where we will acknowledge the contributors to this project (so
 4. What if I encounter a bug/have a feature request?
     A. File in an Issue, and then we can discuss further!
 
-## Changelogs
-
-[Add here]
 
 ## Code of Conduct
 
