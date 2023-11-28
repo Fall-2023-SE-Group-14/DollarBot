@@ -1,0 +1,15 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: Janarthanan
+  given-names: Jay Vishaal
+- family-names: Ravi
+  given-names: Harini
+- family-names: Bhagwat
+  given-names: Manasi
+- family-names: Shiraz
+  given-names: Zahra
+orcid: https://orcid.org/0000-0000-0000-0000
+title:Fall-2023-SE-Group-14/DollarBot: V0.0.1-test-release
+version: v0.0.1-test-release
+date-released: 2023-11-22
