@@ -76,7 +76,7 @@ menu_commands = [
     ("send_mail", "Send the expense report in the mail"),
     ("pdf", "Get the expense report in the form of PDF"),
     ("delete_user", "Delete a user from the epense tracker"),
-    ("ocr", "Please upload your bill")
+    ("ocr", "Please upload your bill"),
 ]
 
 bot.set_my_commands(
@@ -125,8 +125,8 @@ def handle_menu_command(message):
     elif command == "set_reminder":
         print("Setting reminder")
         reminder.run(message, bot)
-    elif command == 'ocr':
-        print('Upload Bills')
+    elif command == "ocr":
+        print("Upload Bills")
         ocr.run(message, bot)
     elif command == "add_user":
         add_user.register_people(message, bot)
