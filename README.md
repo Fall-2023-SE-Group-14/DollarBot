@@ -32,9 +32,12 @@ DollarBot is your easy-to-use Telegram Bot that simplifies recording daily expen
 - Better visualization: Added pie charts, bar graphs with and without budget lines for a better look at spending history
   Added a bar graph in the /history command to see spending across different categories
   View daily and monthly expenses for spending history
+- Easily scan your invoice and add the bill amount to the dollar bot.  
 
 
 > Where simplicity converges with financial harmony, right at your fingertips.
+
+<img src="./OCR%20-%20DollarBot.gif" alt="Dollar Bot" width="300" style="margin-right: 20px;"/>
 
 <div style="display: flex; align-items: center;">
   <div>
