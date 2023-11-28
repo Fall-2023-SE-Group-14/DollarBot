@@ -56,7 +56,7 @@ Please create a new branch for your work and base it on the latest 'main' branch
 2. Provide a clear and concise description of your changes.
 
 ### Code Style
-We request you to really adhere to the project's coding styles and language <>
+We request you to really adhere to the project's coding styles and language
 
 ### Reporting Bugs
 
