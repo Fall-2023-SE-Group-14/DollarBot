@@ -229,9 +229,6 @@ Here is a section where we will acknowledge the contributors to this project (so
 - Manasi Bhagwat
 - Zahra Shiraz
 
-## Support
-
-[Add here]
 
 ## FAQs
 
@@ -247,9 +244,6 @@ Here is a section where we will acknowledge the contributors to this project (so
 4. What if I encounter a bug/have a feature request?
     A. File in an Issue, and then we can discuss further!
 
-## Changelogs
-
-[Add here]
 
 ## Code of Conduct
 
