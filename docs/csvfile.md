@@ -19,4 +19,4 @@ Below you can see an example:
 
 Below is the csv file generated in the above example:
 
-<img src="./csvss.png" width="350" height="80">
+<img src="./csvss.png" width="300" height="100">
