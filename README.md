@@ -37,14 +37,14 @@ DollarBot is your easy-to-use Telegram Bot that simplifies recording daily expen
 
 > Where simplicity converges with financial harmony, right at your fingertips.
 
+💸 **Dollar Bot - OCR Invoice Feature** 💸
+
+Turn your receipts into digital treasures with our snazzy OCR Invoice feature! 📸💼 Simply upload an image, and watch the magic happen as Tesseract library transforms it into organized bill data. Making expenses fun, one byte at a time! 💳💻 Join the dollar revolution, because who said budgeting can't be amusing? 🚀🤖 #DollarBot #ExpenseMagic
+
+
 <img src="./OCR%20-%20DollarBot.gif" alt="Dollar Bot" width="300" style="margin-right: 20px;"/>
 
-<div style="display: flex; align-items: center;">
-  <div>
-
-  <img src="./DollarBotDemoNewGIf.gif" alt="Dollar Bot" width="200" style="margin-right: 20px;"/>
-
-  </div>
+<div style="display: flex; align-items: center;"> 
   <div>
 
   ## What's New?!
@@ -61,6 +61,11 @@ DollarBot is your easy-to-use Telegram Bot that simplifies recording daily expen
   8. **Document Trail:** Generate polished PDF expenditure reports for a comprehensive overview.
   9. **Friendly Reminders:** Send amiable email reminders to ensure financial settlements.
   10. **Invoice OCR:** You can just scan your bill and get the data automatically added to the app.
+  </div>
+  <div>
+
+  <img src="./DollarBotDemoNewGIf.gif" alt="Dollar Bot" width="200" style="margin-right: 20px;"/>
+
   </div>
 </div>
 
